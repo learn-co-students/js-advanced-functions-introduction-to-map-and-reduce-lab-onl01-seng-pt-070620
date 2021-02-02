@@ -14,7 +14,7 @@ function mapToNoChange(sourceArray) {
     return r
   }
 
-  function mapToDouble(sourceArray) {
+function mapToDouble(sourceArray) {
     let r = []
     for (let i = 0; i < sourceArray.length; i++ ) {
       r.push(2 * sourceArray[i])
@@ -22,32 +22,32 @@ function mapToNoChange(sourceArray) {
     return r
   }
 
-  function mapToSquare(sourceArray) {
+function mapToSquare(sourceArray) {
     let r = []
-    for (let i = 0; i < sourceArray.length; i++ ) {
-      r.push(Math.pow(sourceArray[i], 2))
-    }
+        for (let i = 0; i < sourceArray.length; i++ ) {
+        r.push(Math.pow(sourceArray[i], 2))
+        }
     return r
   }
 
-  function reduceToTotal(sourceArray, startingPoint=0) {
-      let total = startingPoint
+function reduceToTotal(sourceArray, startingPoint=0) {
+    let total = startingPoint
       for (let i = 0; i < sourceArray.length; i++ ) {
           total = total + sourceArray[i]
       }
       return total 
     }
 
-    function reduceToAllTrue(sourceArray) {
-        for (let i = 0; i < sourceArray.length; i++ ) {
-            if (sourceArray[i] === false) return false
+function reduceToAllTrue(sourceArray) {
+     for (let i = 0; i < sourceArray.length; i++ ) {
+        if (sourceArray[i] === false) return false
         }
-         return true 
-    }
+        return true 
+     }
 
-    function reduceToAnyTrue(sourceArray){
-        for (let i = 0; i < sourceArray.length; i++ ) {
-            if (sourceArray[i]) return true 
-        }
-        return false 
+function reduceToAnyTrue(sourceArray){
+    for (let i = 0; i < sourceArray.length; i++ ) {
+        if (sourceArray[i]) return true 
     }
+    return false 
+}
